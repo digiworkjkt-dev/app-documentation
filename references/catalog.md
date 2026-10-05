@@ -4,11 +4,17 @@
 
 Manifest Markdown berikut adalah sumber kerja modular, bukan format output
 utama. Render semua bagian relevan menjadi satu laporan HTML profesional
-`laporan-dokumentasi-aplikasi.html`, self-contained dan siap cetak A4:
+`app-documentation/laporan-dokumentasi-aplikasi.html`, self-contained dan siap cetak A4:
 margin 3 cm, Cambria 12 pt, mengikuti html-print.md. Section memiliki anchor
 stabil sesuai nama dokumen/ID. README memberi tautan ke laporan dan sumber.
 PDF bersyarat pada engine dan verifikasi hasil; footer/nomor halaman
 tidak dijanjikan tersedia pada setiap browser.
+
+Seluruh output berada di `app-documentation/`: README output di root folder,
+sumber modular opsional pada `sources/`, serta PDF/lampiran/ZIP bila dihasilkan.
+Nama file manifest di bawah relatif terhadap folder sumber; bukan instruksi
+menyimpan output ke direktori instalasi skill. Narasi penyerahan wajib
+menyebut folder output dan path laporan yang benar-benar ada.
 
 ## Manifest Standard
 

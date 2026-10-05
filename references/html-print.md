@@ -2,6 +2,9 @@
 
 ## Kontrak output
 
+- Simpan laporan di `app-documentation/laporan-dokumentasi-aplikasi.html`.
+  Simpan PDF/lampiran/ZIP terkait dalam folder output `app-documentation/`;
+  jelaskan lokasi tersebut saat penyerahan setelah file diverifikasi.
 - Output primer: HTML self-contained dengan CSS inline, tanpa CDN, analytics,
   remote font, atau dependensi jaringan.
 - Layout kertas: A4 portrait (210 × 297 mm).

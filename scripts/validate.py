@@ -61,6 +61,8 @@ def validate():
     assert re.search(r'\.report\s*\{[^}]*padding:\s*0', html), "Double print margin risk"
     assert "position: fixed" not in html, "Unverified repeating footer"
     assert "html-print.md" in main and "report-a4.html" in main
+    assert "app-documentation/laporan-dokumentasi-aplikasi.html" in main
+    assert "Seluruh output dokumen disimpan di folder" in main
     print("PASS: metadata, links, headings, anchors, self-contained template and print rules.")
     print("Not checked: visual pagination, font availability, SNI conformity or competence.")
 

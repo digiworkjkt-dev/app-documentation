@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.1 — 2026-10-05
+
+- Tetapkan folder `app-documentation/` untuk seluruh output dokumen.
+- Tambahkan path laporan utama, lokasi sumber opsional dan aturan narasi
+  penyerahan hasil setelah file diverifikasi.
+- Bedakan folder output dari folder instalasi skill; template cetak tidak berubah.
+
 ## 1.4 — 2026-10-05
 
 - Ubah output primer menjadi HTML profesional self-contained.

@@ -1,7 +1,7 @@
 # app-documentation
 
 Skill berbahasa Indonesia untuk membuat dan memperbarui dokumentasi pembangunan
-aplikasi end-to-end. Versi **1.4**.
+aplikasi end-to-end. Versi **1.4.1**.
 
 ## Output
 
@@ -15,6 +15,18 @@ bergantung pada browser atau engine; tidak dijanjikan lintas engine.
 
 Sumber kerja Markdown dapat dipertahankan. PDF diberikan hanya ketika engine
 tersedia dan hasil yang relevan telah diperiksa.
+
+## Lokasi penyimpanan output
+
+Seluruh output dokumen disimpan di folder **`app-documentation/`** relatif
+terhadap root proyek/direktori kerja. Laporan utama:
+`app-documentation/laporan-dokumentasi-aplikasi.html`.
+Sumber Markdown opsional berada di `app-documentation/sources/`. PDF (jika
+dihasilkan), lampiran, dan ZIP juga berada di folder output tersebut.
+
+Folder output bukan folder instalasi skill `.agents/skills/app-documentation/`.
+Saat menyerahkan hasil, skill wajib menyatakan lokasi penyimpanan dan nama
+laporan aktual setelah keberadaan file diverifikasi.
 
 ## Cakupan
 

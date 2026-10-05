@@ -5,7 +5,7 @@ description: Membuat dan memperbarui paket dokumentasi aplikasi end-to-end—bri
 
 # App Documentation
 
-Versi skill: 1.4 — baseline referensi diverifikasi 2026-10-05.
+Versi skill: 1.4.1 — baseline referensi diverifikasi 2026-10-05.
 
 Ubah kebutuhan aplikasi menjadi dokumen yang bisa dipakai mengambil keputusan,
 mengimplementasikan, menguji, dan mengoperasikan aplikasi. Jangan sekadar mengisi
@@ -244,8 +244,16 @@ jangan menganggap persetujuan lama berlaku pada perubahan.
 
 ## 8. Delivery
 
-Simpan di `docs/` pada proyek jika diizinkan. Untuk paket satu kali, gunakan
-`<nama-aplikasi>-docs/`. README adalah pintu masuk; gunakan manifest dari katalog.
+Simpan seluruh output dokumen di folder `app-documentation/` relatif terhadap
+root proyek atau direktori kerja aktif untuk paket satu kali. Buat folder jika
+belum ada. Folder output ini berbeda dari folder instalasi skill
+`.agents/skills/app-documentation/`; jangan menaruh hasil laporan di folder skill.
+README output adalah pintu masuk; gunakan manifest dari katalog.
+Laporan utama berada di `app-documentation/laporan-dokumentasi-aplikasi.html`.
+Sumber Markdown opsional berada di `app-documentation/sources/`; PDF yang
+benar-benar dihasilkan, lampiran, dan paket ZIP juga disimpan dalam folder output
+ini. Jangan menimpa file pengguna yang tidak terkait atau menghapus versi lama
+tanpa izin; gunakan penamaan versi bila diperlukan.
 
 Gunakan manifest katalog sebagai sumber kerja dan susun laporan utama
 `laporan-dokumentasi-aplikasi.html` dengan section/anchor sesuai urutan dokumen.
@@ -278,6 +286,11 @@ yang tetap terbaca dalam cetak hitam-putih.
 
 Kirim file nyata melalui mekanisme delivery yang tersedia, bukan hanya tree
 folder atau janji. ZIP boleh ditambahkan untuk paket banyak file.
+Setelah file benar-benar tersimpan, wajib sertakan narasi penyerahan:
+"Seluruh output dokumen disimpan di folder `app-documentation/`.
+Laporan utama tersedia di `app-documentation/laporan-dokumentasi-aplikasi.html`."
+Sesuaikan nama file dengan hasil aktual, sebutkan PDF hanya bila dihasilkan,
+dan jangan menyatakan file tersimpan sebelum memverifikasi keberadaannya.
 Ringkasan akhir memuat cakupan, keputusan terbuka yang menghambat build,
 hasil audit, dan langkah berikut paling bernilai. Jangan mengklaim dokumen
 siap implementasi tanpa menyebut blocker penting.

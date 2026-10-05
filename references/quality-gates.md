@@ -78,6 +78,8 @@ diperiksa. Audit dokumen tidak setara dengan validasi aplikasi.
 ## Gate H: HTML, A4, dan cetak/PDF
 
 - Deliverable utama HTML self-contained; sumber Markdown tidak menggantikannya.
+- Seluruh output berada di `app-documentation/`; path laporan dan narasi lokasi
+  penyimpanan sesuai file aktual, terpisah dari direktori instalasi skill.
 - @page A4 portrait/margin 3 cm, font utama Cambria 12 pt dan print CSS tersedia.
 - Tidak ada margin ganda, konten terlalu lebar, raw Mermaid, atau sumber CDN.
 - Cover, metadata, status, TOC/anchor, sumber, gap dan panduan cetak tersedia.
