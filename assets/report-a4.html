@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kerangka laporan dokumentasi aplikasi, A4, margin 3 cm, Cambria 12 pt.">
+  <title>Kerangka Laporan Dokumentasi Aplikasi</title>
+  <style>
+    @page { size: A4 portrait; margin: 3cm; }
+    * { box-sizing: border-box; }
+    html { background: #e9edf2; }
+    body {
+      margin: 0; color: #182332;
+      font-family: Cambria, "Times New Roman", serif;
+      font-size: 12pt; line-height: 1.5;
+    }
+    .report {
+      width: 210mm; max-width: 100%; padding: 30mm; margin: 24px auto;
+      background: white; box-shadow: 0 4px 24px #17233518;
+    }
+    h1, h2, h3, p, li, td, th, code { font-size: 12pt; }
+    h1, h2, h3 { line-height: 1.35; color: #183d54; }
+    h1 { margin: 12mm 0 6mm; font-weight: 700; text-transform: uppercase; }
+    h2 { margin: 8mm 0 4mm; border-bottom: 1px solid #a4b5c1; padding-bottom: 2mm; }
+    h3 { margin: 6mm 0 3mm; }
+    p { margin: 0 0 4mm; }
+    .eyebrow { color: #526675; letter-spacing: .06em; font-weight: 700; }
+    .badge { display: inline-block; border: 1px solid #7a8c98; padding: 1mm 3mm; }
+    .cover { min-height: 190mm; }
+    .metadata { margin: 8mm 0; }
+    .metadata dt { font-weight: 700; }
+    .metadata dd { margin: 0 0 3mm; }
+    .notice { border-left: 3px solid #536f84; padding: 3mm 4mm; margin: 5mm 0; background: #f1f5f8; }
+    a { color: #194f70; text-underline-offset: 2px; overflow-wrap: anywhere; }
+    table { width: 100%; table-layout: fixed; border-collapse: collapse; margin: 5mm 0; }
+    caption { text-align: left; font-weight: 700; margin-bottom: 2mm; }
+    th, td { padding: 2mm; border: 1px solid #9eaeba; vertical-align: top; overflow-wrap: anywhere; }
+    th { text-align: left; background: #eef2f5; font-weight: 700; }
+    pre, code { font-family: inherit; white-space: pre-wrap; overflow-wrap: anywhere; }
+    img, svg { max-width: 100%; height: auto; }
+    .screen-only { border: 1px solid #9eaeba; padding: 4mm; margin-bottom: 6mm; }
+    .document-end { border-top: 1px solid #9eaeba; margin-top: 10mm; padding-top: 3mm; }
+    @media screen and (max-width: 800px) {
+      .report { width: 100%; margin: 0; padding: 20px; box-shadow: none; }
+      .cover { min-height: auto; }
+    }
+    @media print {
+      html, body { background: white; margin: 0; padding: 0; }
+      .report { width: auto; max-width: none; padding: 0; margin: 0; box-shadow: none; }
+      .screen-only { display: none !important; }
+      .chapter { break-before: page; page-break-before: always; }
+      h1, h2, h3 { break-after: avoid; page-break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+      thead { display: table-header-group; }
+      tr { break-inside: avoid; page-break-inside: avoid; }
+      .notice { background: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+<main class="report">
+  <aside class="screen-only" aria-label="Panduan cetak">
+    <strong>Kerangka, bukan laporan aplikasi selesai.</strong>
+    Cetak: A4 portrait, skala 100%, margin CSS 3 cm, header/footer browser dimatikan.
+    Cambria harus tersedia pada perangkat cetak; bila tidak, font fallback dipakai.
+    Dukungan footer dan nomor halaman bergantung pada browser atau engine cetak.
+  </aside>
+  <header class="cover" id="cover">
+    <p class="eyebrow">DOKUMENTASI PEMBANGUNAN APLIKASI</p>
+    <h1>[Nama aplikasi — ganti saat digunakan]</h1>
+    <p>Spesifikasi produk, desain teknis, delivery, testing, dan operasional.</p>
+    <p><span class="badge">DRAFT · KERANGKA</span></p>
+    <dl class="metadata">
+      <dt>Versi / tanggal</dt><dd>[Versi dan tanggal aktual]</dd>
+      <dt>Owner / pembaca</dt><dd>[Owner dan pembaca yang diketahui]</dd>
+      <dt>Cakupan</dt><dd>[Lean / Standard / Extended; MVP / Post-MVP]</dd>
+      <dt>Sumber</dt><dd>[Percakapan, file, kode dan referensi yang digunakan]</dd>
+    </dl>
+    <p class="notice">Acuan SNI/SKKNI dan regulasi ditetapkan berdasarkan relevansi
+      serta bukti. Dokumen ini bukan sertifikasi atau keputusan asesmen kompetensi.</p>
+  </header>
+  <nav class="chapter" id="daftar-isi" aria-label="Daftar isi">
+    <h2>Daftar isi</h2>
+    <ol>
+      <li><a href="#ringkasan">Ringkasan dan readiness</a></li>
+      <li><a href="#spesifikasi">Spesifikasi produk dan requirement</a></li>
+      <li><a href="#desain">UX dan desain teknis</a></li>
+      <li><a href="#delivery">Delivery, testing, dan operasi</a></li>
+      <li><a href="#standar">Standar, SKKNI, regulasi, dan gap</a></li>
+      <li><a href="#sumber">Sumber, changelog, dan aturan cetak</a></li>
+    </ol>
+    <p>Daftar isi bertaut. Nomor halaman hanya ditambahkan setelah pagination
+      final diverifikasi dengan engine cetak yang dipilih.</p>
+  </nav>
+  <section class="chapter" id="ringkasan">
+    <h2>1. Ringkasan dan readiness</h2>
+    <p>[Isi masalah, pengguna, tujuan, scope, non-goals, keputusan dan blocker.
+      Placeholder ini harus diganti dengan konten nyata atau unknown berlabel.]</p>
+    <table>
+      <caption>Metadata keputusan — contoh struktur</caption>
+      <thead><tr><th scope="col">Area</th><th scope="col">Status</th><th scope="col">Catatan</th></tr></thead>
+      <tbody><tr><td>Scope MVP</td><td>Open</td><td>Belum ada input aplikasi pada kerangka ini.</td></tr></tbody>
+    </table>
+  </section>
+  <section class="chapter" id="spesifikasi">
+    <h2>2. Spesifikasi produk dan requirement</h2>
+    <p>[Brief, PRD, FR/NFR, user stories, acceptance criteria. Gunakan ID stabil
+      dan bedakan confirmed, observed, proposed, assumed, dan open.]</p>
+  </section>
+  <section class="chapter" id="desain">
+    <h2>3. UX dan desain teknis</h2>
+    <p>[User flow, role/permission, arsitektur, database, API, security/privacy.
+      Sisipkan diagram inline SVG yang sudah dirender; jangan sintaks mentah.]</p>
+  </section>
+  <section class="chapter" id="delivery">
+    <h2>4. Delivery, testing, dan operasi</h2>
+    <p>[Backlog, traceability, test plan, UAT, deployment/runbook dan panduan.
+      Test planned tidak diberi status pass tanpa bukti pelaksanaan.]</p>
+  </section>
+  <section class="chapter" id="standar">
+    <h2>5. Standar, SKKNI, regulasi, dan gap</h2>
+    <p>[Register sumber resmi, edisi/status, applicability, mapping topik/klausul
+      terverifikasi, kontrol, task, bukti, gap dan action owner.]</p>
+    <p>Mapping SKKNI mendukung dokumentasi aktivitas/artefak, bukan portofolio
+      sertifikasi personel. Pecah matriks lebar menjadi tabel berkunci ID.</p>
+  </section>
+  <section class="chapter" id="sumber">
+    <h2>6. Sumber, changelog, dan aturan cetak</h2>
+    <p>[Isi referensi aktual beserta tanggal cek, perubahan versi, audit yang
+      dijalankan dan batas verifikasinya.]</p>
+    <h3>Aturan cetak/PDF</h3>
+    <ol>
+      <li>Pilih A4 portrait dan skala 100%.</li>
+      <li>Gunakan margin CSS 3 cm di semua sisi. Bila engine mengabaikannya,
+        gunakan custom 30 mm dan periksa agar tidak ganda.</li>
+      <li>Pastikan Cambria tersedia; fallback bukan pemenuhan Cambria persis.</li>
+      <li>Default matikan header/footer bawaan browser. Footer dan nomor halaman
+        bergantung pada engine; aktifkan hanya setelah hasilnya diperiksa.</li>
+      <li>Periksa clipping, tabel, page break, blank page, diagram, dan font
+        pada print preview serta PDF akhir.</li>
+    </ol>
+    <p>Catat engine/versi, font aktual, mode footer, checks run dan limitations
+      pada laporan akhir. Kerangka ini tidak menjamin hasil lintas browser.</p>
+  </section>
+  <footer class="document-end">
+    Akhir dokumen · Kerangka app-documentation v1.4.
+    Ini footer akhir dokumen, bukan footer berulang atau nomor halaman.
+  </footer>
+</main>
+</body>
+</html>
